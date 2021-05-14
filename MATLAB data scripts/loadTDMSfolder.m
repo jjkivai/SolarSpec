@@ -29,8 +29,8 @@ end
 
 TimeGroupIndex = find(strcmp(TDMScontent.groupNames,'Time'));
 TimeDataIndex = TDMScontent.chanIndices{1,TimeGroupIndex};
-Time = transpose(TDMScontent.data{1,TimeDataIndex});
-%Time = transpose(TDMScontent.data{1,TimeDataIndex} * 4e-9);
+%Time = transpose(TDMScontent.data{1,TimeDataIndex});
+Time = transpose(TDMScontent.data{1,TimeDataIndex} * 4e-9);
 Time = array2table(Time);
 
 LinData = [Time,LinData];
